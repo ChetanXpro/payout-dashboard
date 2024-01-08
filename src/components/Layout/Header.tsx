@@ -6,7 +6,7 @@ import SearchBar from "../SearchBar";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-white py-2 px-6   items-center flex justify-between shadow">
+    <header className="bg-white py-2 px-6 z-50  items-center flex justify-between shadow">
       {/* Header content goes here */}
       <div className="flex flex-1 gap-4 h-full items-center ">
         <p className="text-[15px]">Payments</p>

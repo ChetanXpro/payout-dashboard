@@ -30,7 +30,7 @@ const App: React.FC = () => {
         <Header />
 
         {/* Main content area */}
-        <main className="flex-1  p-5 overflow-y-auto ">
+        <main className="flex-1   p-5 overflow-y-auto ">
           {/* {selectedComponent} */}
           <CashFreeDashboard />
         </main>
