@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { LeftArrowIcon, RightArrowIcon } from "../../assets/Icons/Icons";
 
 interface PaginationProps {

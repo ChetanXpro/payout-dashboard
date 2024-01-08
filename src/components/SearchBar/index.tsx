@@ -1,4 +1,3 @@
-import React from "react";
 import { SearchIcon } from "../../assets/Icons/Icons";
 
 const SearchBar = ({
