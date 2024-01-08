@@ -123,7 +123,7 @@ const Sidebar: React.FC<SidebarProps> = ({
           <div className="flex gap-3 text-base">
             <img
               src="/Navbar/image@2x.png"
-              className="w-[44px] rounded-lg h-[44px]"
+              className="w-[40px] rounded-lg h-[44px]"
               alt=""
             />
             <div>
@@ -133,7 +133,9 @@ const Sidebar: React.FC<SidebarProps> = ({
               </a>
             </div>
           </div>
-          <ArrowDownIcon />
+          <div className="cursor-pointer">
+            <ArrowDownIcon />
+          </div>
         </div>
       </div>
       {/* Sidebar content goes here */}

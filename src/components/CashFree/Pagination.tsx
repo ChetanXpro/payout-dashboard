@@ -22,7 +22,7 @@ const Pagination: React.FC<PaginationProps> = ({
   return (
     <div className="flex items-center justify-between gap-6">
       <button
-        className={` py-1 font-medium px-4 text-[15px]  flex text-[#4D4D4D] items-center gap-2 rounded-md border-[#D9D9D9] border`}
+        className={` py-1 font-medium cursor-pointer px-4 text-[15px]  flex text-[#4D4D4D] items-center gap-2 rounded-md border-[#D9D9D9] border`}
         onClick={() => handlePageChange(currentPage - 1)}
         disabled={currentPage === 1}
       >
@@ -105,7 +105,7 @@ const Pagination: React.FC<PaginationProps> = ({
       </div>
 
       <button
-        className={` py-1 px-4 font-medium rounded-md text-sm text-[#4D4D4D] flex items-center gap-2 border-[#D9D9D9] border`}
+        className={` py-1 px-4 font-medium cursor-pointer rounded-md text-sm text-[#4D4D4D] flex items-center gap-2 border-[#D9D9D9] border`}
         onClick={() => handlePageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
       >

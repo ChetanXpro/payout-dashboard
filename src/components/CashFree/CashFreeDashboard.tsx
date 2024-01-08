@@ -48,12 +48,7 @@ const CashFreeDashboard = () => {
       orderAmount: "₹1,278.23",
       transactionFees: "₹22",
     },
-    {
-      orderId: "#281209",
-      orderDate: "7 July, 2023",
-      orderAmount: "₹1,278.23",
-      transactionFees: "₹22",
-    },
+
     {
       orderId: "#281209",
       orderDate: "7 July, 2023",
@@ -67,7 +62,7 @@ const CashFreeDashboard = () => {
     <div className="border flex flex-col px-3 gap-4  h-full ">
       <div className="flex justify-between items-center">
         <p className="text-xl">Overview</p>
-        <div className="text-base  border border-[#D9D9D9] py-1 px-2 text-[#4D4D4D] font-normal rounded-sm flex gap-2 items-center">
+        <div className="text-base cursor-pointer  bg-white  border border-[#D9D9D9] py-1.5 px-3 text-[#4D4D4D] font-normal rounded-md flex gap-2 items-center">
           <p>Last Month</p>
           <PathDownIcon />
         </div>
@@ -97,34 +92,34 @@ const CashFreeDashboard = () => {
             />
           </div>
           <div className="flex gap-2 ">
-            <div className="flex gap-2 text-[#4D4D4D] font-normal font-medium border-[#D9D9D9] border px-3 py-1 rounded-md items-center">
+            <div className="flex gap-2 text-[#4D4D4D]  font-normal cursor-pointer border-[#D9D9D9] border px-3 py-1 rounded-md items-center">
               <p>Sort</p>
               <SortIcon />
             </div>
-            <div className="flex items-center justify-center p-2 rounded-md font-base border-[#D9D9D9] border">
+            <div className="flex items-center justify-center p-2 rounded-md cursor-pointer font-base border-[#D9D9D9] border">
               <DownloadIcon />
             </div>
           </div>
         </div>
-        <div className="overflow-x-scroll rounded-md ">
+        <div className="overflow-x-scroll rounded-md  ">
           <table className="min-w-full  ">
             <thead className="">
-              <tr className="    bg-[#F2F2F2]  justify-between   ">
-                <th className="py-2    px-4  font-medium text-[#4D4D4D] text-sm  text-start ">
+              <tr className="  rounded-md  bg-[#F2F2F2]     ">
+                <th className="py-[11px] rounded-s-md   px-4  font-medium text-[#4D4D4D] text-sm  text-start ">
                   Order ID
                 </th>
-                <th className="py-2 px-4 font-medium text-[#4D4D4D] text-sm flex    ">
+                <th className="py-2 px-4  font-medium text-[#4D4D4D] text-sm flex    ">
                   <div className="flex gap-1 items-center ">
                     <p>Order Date</p>
                     <TriangleIcon />
                   </div>
                 </th>
                 {/* <div className="w-[10rem]"></div> */}
-                <th className="py-2 px-4 font-medium text-[#4D4D4D] text-sm text-end ">
+                <th className="py-2 px-4   font-medium text-[#4D4D4D] text-sm text-end ">
                   Order Amount
                 </th>
-                <th className="py-2 px-4 font-medium flex gap-1 items-center text-[#4D4D4D] text-sm text-start">
-                  <div className="flex gap-1 items-center justify-end w-full">
+                <th className="py-2 px-4 rounded-e-md  font-medium flex gap-1 items-center text-[#4D4D4D] text-sm text-start">
+                  <div className="flex gap-1 rounded-e-md items-center justify-end w-full">
                     <p>Transaction Fees</p>
                     <InfoIcon />
                   </div>
@@ -133,17 +128,17 @@ const CashFreeDashboard = () => {
             </thead>
             <tbody className=" ">
               {ordersData.map((order) => (
-                <tr className=" p-3 text-sm border-b    ">
-                  <td className="py-2 px-4 text-sm  text-[#146EB4]  ">
+                <tr className=" p-3 text-sm px-10 rounded-md    ">
+                  <td className="py-[12px]  px-4  text-sm border-b    text-[#146EB4]  ">
                     {order.orderId}
                   </td>
-                  <td className="py-2 px-4 text-sm text-[#1A181E]  ">
+                  <td className="py-[12px] px-4 text-sm border-b  text-[#1A181E]  ">
                     {order.orderDate}
                   </td>
-                  <td className="py-2 px-4 text-sm text-[#1A181E]  text-end   ">
+                  <td className="py-[12px] px-4 text-sm border-b  text-[#1A181E]  text-end   ">
                     {order.orderAmount}
                   </td>
-                  <td className="py-2 px-4  text-sm text-[#1A181E]  text-end ">
+                  <td className="py-[12px] px-4  text-sm border-b  text-[#1A181E]  text-end ">
                     {order.transactionFees}
                   </td>
                 </tr>
