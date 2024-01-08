@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Header from "./components/Layout/Header";
 import Sidebar from "./components/Layout/Sidebar";
-import CashFreeDashboard from "./components/CashFree/CashFreeDashboard";
+import CashFreeDashboard from "./pages/CashFreeDashboard";
 
 // import ComponentA from "./components/ComponentA";
 // import ComponentB from "./components/ComponentB";
@@ -25,12 +25,12 @@ const App: React.FC = () => {
         selectedComponent={selectedComponent}
       />
 
-      <div className="flex-1  flex flex-col overflow-hidden">
+      <div className="flex-1  flex flex-col ">
         {/* Header */}
         <Header />
 
         {/* Main content area */}
-        <main className="flex-1 overflow-x-hidden p-5 overflow-y-auto bg-gray-200">
+        <main className="flex-1  p-5 overflow-y-auto ">
           {/* {selectedComponent} */}
           <CashFreeDashboard />
         </main>

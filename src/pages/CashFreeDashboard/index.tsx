@@ -1,4 +1,3 @@
-import React from "react";
 import {
   DownloadIcon,
   InfoIcon,
@@ -6,8 +5,8 @@ import {
   SortIcon,
   TriangleIcon,
 } from "../../assets/Icons/Icons";
-import SearchBar from "../SearchBar";
-import Pagination from "./Pagination";
+import SearchBar from "../../components/SearchBar";
+import Pagination from "../../components/CashFree/Pagination";
 
 const CashFreeDashboard = () => {
   const ordersData = [
@@ -17,18 +16,14 @@ const CashFreeDashboard = () => {
       orderAmount: "₹1,278.23",
       transactionFees: "₹22",
     },
+
     {
       orderId: "#281209",
       orderDate: "7 July, 2023",
       orderAmount: "₹1,278.23",
       transactionFees: "₹22",
     },
-    {
-      orderId: "#281209",
-      orderDate: "7 July, 2023",
-      orderAmount: "₹1,278.23",
-      transactionFees: "₹22",
-    },
+
     {
       orderId: "#281209",
       orderDate: "7 July, 2023",
@@ -42,6 +37,64 @@ const CashFreeDashboard = () => {
       transactionFees: "₹22",
     },
 
+    {
+      orderId: "#281209",
+      orderDate: "7 July, 2023",
+      orderAmount: "₹1,278.23",
+      transactionFees: "₹22",
+    },
+    {
+      orderId: "#281209",
+      orderDate: "7 July, 2023",
+      orderAmount: "₹1,278.23",
+      transactionFees: "₹22",
+    },
+
+    {
+      orderId: "#281209",
+      orderDate: "7 July, 2023",
+      orderAmount: "₹1,278.23",
+      transactionFees: "₹22",
+    },
+    {
+      orderId: "#281209",
+      orderDate: "7 July, 2023",
+      orderAmount: "₹1,278.23",
+      transactionFees: "₹22",
+    },
+
+    {
+      orderId: "#281209",
+      orderDate: "7 July, 2023",
+      orderAmount: "₹1,278.23",
+      transactionFees: "₹22",
+    },
+    {
+      orderId: "#281209",
+      orderDate: "7 July, 2023",
+      orderAmount: "₹1,278.23",
+      transactionFees: "₹22",
+    },
+
+    {
+      orderId: "#281209",
+      orderDate: "7 July, 2023",
+      orderAmount: "₹1,278.23",
+      transactionFees: "₹22",
+    },
+    {
+      orderId: "#281209",
+      orderDate: "7 July, 2023",
+      orderAmount: "₹1,278.23",
+      transactionFees: "₹22",
+    },
+
+    {
+      orderId: "#281209",
+      orderDate: "7 July, 2023",
+      orderAmount: "₹1,278.23",
+      transactionFees: "₹22",
+    },
     {
       orderId: "#281209",
       orderDate: "7 July, 2023",
@@ -59,7 +112,7 @@ const CashFreeDashboard = () => {
     // Add more orders as needed
   ];
   return (
-    <div className="border flex flex-col px-3 gap-4  h-full ">
+    <div className=" flex flex-col px-3 gap-4   h-full ">
       <div className="flex justify-between items-center">
         <p className="text-xl">Overview</p>
         <div className="text-base cursor-pointer  bg-white  border border-[#D9D9D9] py-1.5 px-3 text-[#4D4D4D] font-normal rounded-md flex gap-2 items-center">
@@ -82,7 +135,7 @@ const CashFreeDashboard = () => {
         <div className="custom-vertical-bar mx-2"></div>
         <p>This Month</p>
       </div>
-      <div className="bg-white h-full p-3 flex flex-col justify-between gap-5">
+      <div className="bg-white  rounded-md h-full p-3 flex flex-col justify-between gap-5">
         <div className="flex w-full items-center  justify-between">
           <div className="w-[15rem]">
             <SearchBar
@@ -101,10 +154,10 @@ const CashFreeDashboard = () => {
             </div>
           </div>
         </div>
-        <div className="overflow-x-scroll rounded-md  ">
-          <table className="min-w-full  ">
-            <thead className="">
-              <tr className="  rounded-md  bg-[#F2F2F2]     ">
+        <div className=" h-[18rem] md:h-full overflow-y-auto    ">
+          <table className="min-w-full     ">
+            <thead className="  rounded-lg">
+              <tr className="  rounded-md  bg-[#F2F2F2] ">
                 <th className="py-[11px] rounded-s-md   px-4  font-medium text-[#4D4D4D] text-sm  text-start ">
                   Order ID
                 </th>
@@ -126,10 +179,10 @@ const CashFreeDashboard = () => {
                 </th>
               </tr>
             </thead>
-            <tbody className=" ">
+            <tbody className=" overflow-y-auto ">
               {ordersData.map((order) => (
-                <tr className=" p-3 text-sm px-10 rounded-md    ">
-                  <td className="py-[12px]  px-4  text-sm border-b    text-[#146EB4]  ">
+                <tr className=" p-3  text-sm px-10 rounded-md     ">
+                  <td className="py-[12px]  px-4  text-sm border-b     text-[#146EB4]  ">
                     {order.orderId}
                   </td>
                   <td className="py-[12px] px-4 text-sm border-b  text-[#1A181E]  ">
@@ -157,6 +210,7 @@ const CashFreeDashboard = () => {
             />
           </div>
         </div>
+        <div className="bg-[]"></div>
       </div>
     </div>
   );

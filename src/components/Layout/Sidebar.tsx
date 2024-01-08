@@ -29,6 +29,7 @@ const SideBarItems = [
     icon: <HomeIcon />,
     link: "/",
     children: [],
+    totalNotifications: 0,
   },
   {
     name: "Orders",
@@ -48,6 +49,7 @@ const SideBarItems = [
         link: "/orders/abondoned",
       },
     ],
+    totalNotifications: 3,
   },
 
   {
@@ -55,53 +57,62 @@ const SideBarItems = [
     icon: <ProductsIcon />,
     link: "/",
     children: [],
+    totalNotifications: 0,
   },
   {
     name: "Delivery",
     icon: <DeliveryIcon />,
     link: "/",
     children: [],
+    totalNotifications: 0,
   },
   {
     name: "Marketing",
     icon: <MarketingIcon />,
     link: "/",
     children: [],
+    totalNotifications: 0,
   },
   {
     name: "Analytics",
     icon: <AnalyticsIcon />,
     link: "/",
     children: [],
+    totalNotifications: 0,
   },
   {
     name: "Payments",
     icon: <PayoutsIcon />,
     link: "/",
     children: [],
+    totalNotifications: 0,
   },
   {
     name: "Tools",
     icon: <ToolsIcon />,
     link: "/",
     children: [],
+    totalNotifications: 0,
   },
   {
     name: "Discouts",
     icon: <DiscountsIcon />,
     link: "/",
     children: [],
+    totalNotifications: 0,
   },
   {
     name: "Audience",
     icon: <AudienceIcon />,
     link: "/",
     children: [],
+    totalNotifications: 0,
   },
   {
     name: "Appearance",
     icon: <AppearanceIcon />,
     link: "/",
+    totalNotifications: 0,
     children: [],
   },
   {
@@ -109,6 +120,7 @@ const SideBarItems = [
     icon: <PluginsIcon />,
     link: "/",
     children: [],
+    totalNotifications: 0,
   },
 ];
 
@@ -159,10 +171,26 @@ const Sidebar: React.FC<SidebarProps> = ({
                 onClick={() => onButtonClick(item.name)}
               >
                 <div className="flex items-center  w-full gap-3">
-                  {item.icon}
-                  <a href="#" className="text-sm">
-                    {item.name}
-                  </a>
+                  {item.totalNotifications === 0 ? (
+                    <div className="flex items-center w-ful gap-3">
+                      {item.icon}
+                      <a href="#" className={`text-sm`}>
+                        {item.name}
+                      </a>
+                    </div>
+                  ) : (
+                    <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center w-ful gap-3">
+                        {item.icon}
+                        <a href="#" className={`text-sm`}>
+                          {item.name}
+                        </a>
+                      </div>
+                      <p className="text-xs text-white bg-[#EE741F] flex items-center justify-center  rounded-full w-7 h-6">
+                        {item.totalNotifications}
+                      </p>
+                    </div>
+                  )}
                 </div>
               </li>
               {item?.children?.length !== 0 &&

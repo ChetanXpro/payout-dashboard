@@ -25,7 +25,7 @@
 @tailwind utilities;
 
 .custom-vertical-bar {
-    border-left: 2px solid ; /* Adjust the color and style as needed */
-    height: 1.2em; /* Adjust the height as needed */
-    margin: 0 0.5em; /* Adjust the margins as needed */
+    border-left: 2px solid ; 
+    height: 1.2em; 
+    margin: 0 0.5em; 
   }
