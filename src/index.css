@@ -1,3 +1,31 @@
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter.ttc') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter Variable';
+    src: url('../fonts/InterVariable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter Variable Italic';
+    src: url('../fonts/InterVariable-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-vertical-bar {
+    border-left: 2px solid ; /* Adjust the color and style as needed */
+    height: 1.2em; /* Adjust the height as needed */
+    margin: 0 0.5em; /* Adjust the margins as needed */
+  }
