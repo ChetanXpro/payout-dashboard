@@ -43,7 +43,45 @@ const CashFreeDashboard = () => {
       orderAmount: "₹1,278.23",
       transactionFees: "₹22",
     },
+    {
+      orderId: "#281209",
+      orderDate: "7 July, 2023",
+      orderAmount: "₹1,278.23",
+      transactionFees: "₹22",
+    },
 
+    {
+      orderId: "#281209",
+      orderDate: "7 July, 2023",
+      orderAmount: "₹1,278.23",
+      transactionFees: "₹22",
+    },
+    {
+      orderId: "#281209",
+      orderDate: "7 July, 2023",
+      orderAmount: "₹1,278.23",
+      transactionFees: "₹22",
+    },
+
+    {
+      orderId: "#281209",
+      orderDate: "7 July, 2023",
+      orderAmount: "₹1,278.23",
+      transactionFees: "₹22",
+    },
+    {
+      orderId: "#281209",
+      orderDate: "7 July, 2023",
+      orderAmount: "₹1,278.23",
+      transactionFees: "₹22",
+    },
+
+    {
+      orderId: "#281209",
+      orderDate: "7 July, 2023",
+      orderAmount: "₹1,278.23",
+      transactionFees: "₹22",
+    },
     {
       orderId: "#281209",
       orderDate: "7 July, 2023",
@@ -97,7 +135,7 @@ const CashFreeDashboard = () => {
         <div className="custom-vertical-bar mx-2"></div>
         <p>This Month</p>
       </div>
-      <div className="bg-white  rounded-md h-full p-3 flex flex-col justify-between gap-5">
+      <div className="bg-white  rounded-md h-[100%] p-3 overflow-y-auto flex flex-col  gap-3">
         <div className="flex w-full items-center  justify-between">
           <div className="w-[15rem]">
             <SearchBar
@@ -116,26 +154,26 @@ const CashFreeDashboard = () => {
             </div>
           </div>
         </div>
-        <div className=" h-[18rem] md:h-full overflow-y-auto    ">
-          <table className="min-w-full     ">
-            <thead className="  rounded-lg">
+        <div className="  overflow-y-auto  h-full   ">
+          <table className="w-full overflow-y-auto  h-[100%]    ">
+            <thead className="   rounded-lg">
               <tr className="  rounded-md  bg-[#F2F2F2] ">
                 <th className="py-[11px] rounded-s-md   px-4  font-medium text-[#4D4D4D] text-sm  text-start ">
                   Order ID
                 </th>
                 <th className="py-2 px-4  font-medium text-[#4D4D4D] text-sm flex    ">
                   <div className="flex gap-1 items-center ">
-                    <p>Order Date</p>
+                    <p>Order date</p>
                     <TriangleIcon />
                   </div>
                 </th>
                 {/* <div className="w-[10rem]"></div> */}
-                <th className="py-2 px-4   font-medium text-[#4D4D4D] text-sm text-end ">
-                  Order Amount
+                <th className="py-2 px-5   font-medium text-[#4D4D4D] text-sm text-end  ">
+                  Order amount
                 </th>
                 <th className="py-2 px-4 rounded-e-md  font-medium flex gap-1 items-center text-[#4D4D4D] text-sm text-start">
                   <div className="flex gap-1 rounded-e-md items-center justify-end w-full">
-                    <p>Transaction Fees</p>
+                    <p>Transaction fees</p>
                     <InfoIcon />
                   </div>
                 </th>

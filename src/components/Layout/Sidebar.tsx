@@ -201,7 +201,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                       {item?.children?.map((child, index) => (
                         <li
                           key={index}
-                          className={`flex items-center  hover:bg-[#FFFFFF1A] rounded-md p-2 px-3 
+                          className={`flex items-center text-[13px]  hover:bg-[#FFFFFF1A] rounded-md p-2 px-3 
                                  cursor-pointer`}
                           onClick={() => onButtonClick(child.name)}
                         >
