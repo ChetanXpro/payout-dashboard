@@ -112,7 +112,7 @@ const CashFreeDashboard = () => {
     // Add more orders as needed
   ];
   return (
-    <div className=" flex flex-col px-3 gap-4   h-full ">
+    <div className=" flex flex-col px-3 gap-4    h-full ">
       <div className="flex justify-between items-center">
         <p className="text-xl">Overview</p>
         <div className="text-base cursor-pointer  bg-white  border border-[#D9D9D9] py-1.5 px-3 text-[#4D4D4D] font-normal rounded-md flex gap-2 items-center">
@@ -120,7 +120,7 @@ const CashFreeDashboard = () => {
           <PathDownIcon />
         </div>
       </div>
-      <div className=" flex justify-between gap-4 ">
+      <div className=" flex flex-col md:flex-row justify-between gap-4 ">
         <div className="flex rounded-md bg-white gap-2 flex-1 flex-col justify-center pl-4 p-[20px]">
           <p className="text-[#4D4D4D] text-base">Online orders</p>
           <p className="text-3xl font-medium">231</p>
@@ -135,7 +135,7 @@ const CashFreeDashboard = () => {
         <div className="custom-vertical-bar mx-2"></div>
         <p>This Month</p>
       </div>
-      <div className="bg-white  rounded-md h-[100%] p-3 overflow-y-auto flex flex-col  gap-3">
+      <div className="bg-white   rounded-md h-[100%] p-3 overflow-y-auto flex flex-col  gap-3">
         <div className="flex w-full items-center  justify-between">
           <div className="w-[15rem]">
             <SearchBar

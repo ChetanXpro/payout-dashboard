@@ -129,7 +129,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   selectedComponent,
 }) => {
   return (
-    <aside className="w-56 pb-4 px-1 flex flex-col justify-between bg-[#1E2640] text-white">
+    <aside className="w-56 sm:w-64 pb-4 px-1  flex flex-col justify-between bg-[#1E2640] text-white">
       <div className=" py-3 px-2 ">
         <div className="flex items-center justify-between">
           <div className="flex gap-3 text-base">
@@ -138,14 +138,14 @@ const Sidebar: React.FC<SidebarProps> = ({
               className="w-[40px] rounded-lg h-[44px]"
               alt=""
             />
-            <div>
+            <div className="hidden md:block">
               <p className="font-medium">Nishyan</p>
               <a href="#" className="underline text-gray-300 text-[13px]">
                 Visit store
               </a>
             </div>
           </div>
-          <div className="cursor-pointer">
+          <div className="cursor-pointer hidden md:block">
             <ArrowDownIcon />
           </div>
         </div>
@@ -174,7 +174,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                   {item.totalNotifications === 0 ? (
                     <div className="flex items-center w-ful gap-3">
                       {item.icon}
-                      <a href="#" className={`text-sm`}>
+                      <a href="#" className={`text-sm hidden md:block`}>
                         {item.name}
                       </a>
                     </div>
@@ -182,11 +182,11 @@ const Sidebar: React.FC<SidebarProps> = ({
                     <div className="flex items-center justify-between w-full">
                       <div className="flex items-center w-ful gap-3">
                         {item.icon}
-                        <a href="#" className={`text-sm`}>
+                        <a href="#" className={`text-sm hidden md:block`}>
                           {item.name}
                         </a>
                       </div>
-                      <p className="text-xs text-white bg-[#EE741F] flex items-center justify-center  rounded-full w-7 h-6">
+                      <p className="text-xs text-white hidden md:flex bg-[#EE741F]  items-center justify-center  rounded-full w-7 h-6">
                         {item.totalNotifications}
                       </p>
                     </div>
@@ -205,7 +205,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                                  cursor-pointer`}
                           onClick={() => onButtonClick(child.name)}
                         >
-                          <a href="#" className="text-sm">
+                          <a href="#" className="text-sm hidden md:block">
                             {child.name}
                           </a>
                         </li>
@@ -231,7 +231,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         >
           <WalletIcon />
         </div>
-        <div className="">
+        <div className="hidden md:block">
           <p className="text-sm text-gray-400">Availabe credits</p>
           <p className="text-base font-normal">222.10</p>
         </div>

@@ -18,8 +18,9 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="flex font-inter h-screen bg-gray-100">
+    <div className="flex font-inter  h-screen w-full bg-gray-50">
       {/* Sidebar */}
+
       <Sidebar
         onButtonClick={handleButtonClick}
         selectedComponent={selectedComponent}
